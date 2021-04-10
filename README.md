@@ -1,3 +1,3 @@
-# simon
+# ApuntesDeJavasScript
 
-Juego visto en la clase de fundamentos de javascript de Platzi
+Apuntes de JavaScript Platzi
