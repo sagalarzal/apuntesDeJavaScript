@@ -5,16 +5,33 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Apuntes de JavaScript</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400&display=swap" rel="stylesheet">
 </head>
-<body>
+<body style="font-family: 'Poppins', sans-serif;">
     <header>
         <h1>Apuntes de JavaScript</h1>  
     </header>
-    <div>
+    <ol>
         <p>
-            las funciones declarativas, podemos mandar llamar la función antes de que ésta sea declarada, y con la expresión de función, no, tendríamos que declararla primero, y después mandarla llamar
+        Las funciones declarativas, podemos mandar llamar la función antes de que ésta sea declarada, y con la expresión de función, no, tendríamos que declararla primero, y después mandarla llamar
         </p>
-    </div>
+        <p >Las var definidas dentro de las funciones no la puedo usar por fuera. 
+            Las var cambiadas dentro de la funcion, cambian por fuera.
+            Si las vuelvo a declarar, quedan dentro del scope interno y externo separadas cada una es diferente
+        </p>
+        <p>Hoisting: En Js todas las variables var se declaran al inicio como undefined y luego se inicializab eb el renglon que las escribimos. Conclusión: declara las funciones y variables globales al inicio</p>
+        <p>Coerción: cambiar el tipo del valor (variable). Implicita (4 + "7" = 47 es concatenación, y da "47" como string. pero 4 * "7" = 28 si da numero) y explícita (c = String(a); convierte mi numero a en string "41"). </p>
+        <p>Truthy: valores que por defecto son verdaderos ej: 2, a, " ", -1, funciones().</p>
+        <p>Falsy: valores que por defecto son falsos ej: NaN, undefined, null.</p>
+        <p>Operadores: +, -, *, /, !, =, ==, ===, <, >, <=, >=, &&, ||, ?  </p>
+        <p>Operador ternario ? ej: condition ? true : false;</p>
+        <p>todos los elementos del array deben ser del mismo tipo</p>
+        <p>find() : Devuelve el primer elemento del array que cumpla con la condición dada
+            <br>foreach() : Ejecuta lo que le definamos una vez por cada elemento de nuestro array
+            <br>some() : Comprueba si al menos un elemento del array cumple con la condición que le damos
+            <br>filter() : Devuelve todos los elementos del array que cumplan con la condición dada</p>
+    </ol>
     <script src=script.js></script>
 </body>
 </html>
